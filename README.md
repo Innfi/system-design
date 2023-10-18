@@ -1,4 +1,4 @@
-# system=design
+# system-design
 exercise system design with basic building blocks
 
 <h3>Basic questions</h3>
