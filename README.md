@@ -3,8 +3,6 @@ exercise system design with basic building blocks
 
 <h3>Basic questions</h3>
 
-#
-
 * Is it possible?
 * Can we do better?
 
