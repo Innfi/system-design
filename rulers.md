@@ -19,7 +19,7 @@
 |99.99%|8.64 seconds|4.38 minutes|
 |99.999%|864.00 milliseconds|26.30 seconds|
 
-<h2>[redis](https://redis.io/docs/getting-started/faq/)</h2>
+<h2>redis</h2>
 
 (numbers on 64-bit instances) 
 
@@ -38,3 +38,4 @@
 # reference 
 
 [back-of-the-envelope-estimation](https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation)
+[redis](https://redis.io/docs/getting-started/faq/)
