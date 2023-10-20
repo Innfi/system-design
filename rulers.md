@@ -19,6 +19,22 @@
 |99.99%|8.64 seconds|4.38 minutes|
 |99.999%|864.00 milliseconds|26.30 seconds|
 
+<h2>[redis](https://redis.io/docs/getting-started/faq/)</h2>
+
+(numbers on 64-bit instances) 
+
+|Actor|Condition|Memory usage|
+|---|---|---|
+|empty instance|| ~3MB|
+|1 Million small keys|string value pairs| ~85MB|
+|1 Million keys|Hash value, representing an object with 5 fields| ~160MB|
+|number of key limit|| 2^32|
+|number of elements for hash, list, set, sorted set|| 2^32|
+|keys per instance|| over 250 million|
+|conversion threshold from ziplist to skiplist|entry count| 512| 
+
+
+
 # reference 
 
 [back-of-the-envelope-estimation](https://bytebytego.com/courses/system-design-interview/back-of-the-envelope-estimation)
