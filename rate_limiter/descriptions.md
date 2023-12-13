@@ -17,3 +17,17 @@
   - single instance should be sufficient? or multiple instances are needed?
   - how to handle one instance per one request?
   - how to manage database for requests?
+
+# Viable Options
+- token bucket algorithm
+  - good at refining bursting incoming traffics to a fixed rate
+  - difficult to measure the sufficient size of the bucket 
+  - question: how to handle rejected requests?
+- leaky bucket algorithm
+  - good at refining bursting incoming traffics to a fixed rate
+  - time-demanding requests may take longer than SLA to process 
+- fixed window counter
+  - susceptable to bursting incoming traffics
+- sliding window counter
+  - good at assuring a long term maximum traffic rate
+  - bursting traffics may cause a denial of service within the window unit
